@@ -1,0 +1,1380 @@
+[0m[[0minfo[0m] [0mLoading project definition from /brazil/activator-akka-distributed-workers/project[0m
+[0m[[0minfo[0m] [0mSet current project to akka-distributed-workers (in build file:/brazil/activator-akka-distributed-workers/)[0m
+[0m[[0minfo[0m] [0mRunning worker.Main 3001[0m
+[DEBUG] [01/15/2015 08:21:03.387] [run-main-0] [EventStream(akka://ClusterSystem)] logger log1-Logging$DefaultLogger started
+[DEBUG] [01/15/2015 08:21:03.388] [run-main-0] [EventStream(akka://ClusterSystem)] Default Loggers started
+[DEBUG] [01/15/2015 08:21:03.395] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/remoting-terminator#-1280221932]
+[DEBUG] [01/15/2015 08:21:03.416] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/remoting-terminator] started (akka.remote.RemoteActorRefProvider$RemotingTerminator@79ba38a0)
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got mappings: Map(worker.Work -> 20, scala.Int -> 22, worker.WorkResult -> 21)
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got classnames for incremental strategy: [worker.Work, worker.WorkResult, scala.Int]
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got buffer-size: 4096
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got id strategy: incremental
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got serializer type: graph
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got implicit registration logging: true
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got use manifests: false
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got custom serializer init class: null
+[DEBUG] [01/15/2015 08:21:03.447] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got serializer init class: null
+[DEBUG] [01/15/2015 08:21:03.448] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got customizer instance: Failure(java.lang.NullPointerException)
+[DEBUG] [01/15/2015 08:21:03.449] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got customizer method: Failure(java.lang.NullPointerException)
+[DEBUG] [01/15/2015 08:21:03.449] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got compression: off
+00:00 TRACE: [kryo] Registration required: false
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field job: class java.lang.Object
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field job: class java.lang.Object
+00:00 TRACE: [kryo] Register class ID 20: worker.Work (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Register class ID 22: scala.Int (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field result: class java.lang.Object
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field result: class java.lang.Object
+00:00 TRACE: [kryo] Register class ID 21: worker.WorkResult (com.esotericsoftware.kryo.serializers.FieldSerializer)
+[DEBUG] [01/15/2015 08:21:03.503] [run-main-0] [com.romix.akka.serialization.kryo.KryoSerializer(akka://ClusterSystem)] Got serializer: com.romix.akka.serialization.kryo.KryoBasedSerializer@1984599
+[DEBUG] [01/15/2015 08:21:03.520] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/transports#-1021399092]
+[DEBUG] [01/15/2015 08:21:03.521] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/transports] started (akka.remote.Remoting$TransportSupervisor@60938447)
+[INFO] [01/15/2015 08:21:03.524] [run-main-0] [Remoting] Starting remoting
+[DEBUG] [01/15/2015 08:21:03.526] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.actor.SystemGuardian$RegisterTerminationHook$]
+[DEBUG] [01/15/2015 08:21:03.528] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/endpointManager#-985858379]
+[DEBUG] [01/15/2015 08:21:03.533] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/remoting-terminator] now watched by Actor[akka://ClusterSystem/system]
+[DEBUG] [01/15/2015 08:21:03.536] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager] started (akka.remote.EndpointManager@2772dddb)
+[DEBUG] [01/15/2015 08:21:03.762] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/transports] now supervising Actor[akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0#909859050]
+[DEBUG] [01/15/2015 08:21:03.767] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0] started (akka.remote.transport.AkkaProtocolManager@9f1948)
+[INFO] [01/15/2015 08:21:03.773] [run-main-0] [Remoting] Remoting started; listening on addresses :[akka.tcp://ClusterSystem@127.0.0.1:3001]
+[INFO] [01/15/2015 08:21:03.776] [run-main-0] [Remoting] Remoting now listens on addresses: [akka.tcp://ClusterSystem@127.0.0.1:3001]
+[INFO] [01/15/2015 08:21:03.797] [run-main-0] [Cluster(akka://ClusterSystem)] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Starting up...
+[DEBUG] [01/15/2015 08:21:03.804] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/cluster#594451585]
+[DEBUG] [01/15/2015 08:21:03.809] [run-main-0] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$GetClusterCoreRef$]
+[DEBUG] [01/15/2015 08:21:03.815] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster] started (akka.cluster.ClusterDaemon@7655c4a3)
+[DEBUG] [01/15/2015 08:21:03.817] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster] now supervising Actor[akka://ClusterSystem/system/cluster/core#-882354071]
+[DEBUG] [01/15/2015 08:21:03.818] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster] now supervising Actor[akka://ClusterSystem/system/cluster/heartbeatReceiver#80983550]
+[DEBUG] [01/15/2015 08:21:03.824] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$PublisherCreated]
+[DEBUG] [01/15/2015 08:21:03.841] [ClusterSystem-akka.actor.default-dispatcher-4] [akka://ClusterSystem/system/cluster/core] started (akka.cluster.ClusterCoreSupervisor@7a5e16e8)
+[DEBUG] [01/15/2015 08:21:03.842] [ClusterSystem-akka.actor.default-dispatcher-4] [akka://ClusterSystem/system/cluster/core] now supervising Actor[akka://ClusterSystem/system/cluster/core/publisher#1162763646]
+[DEBUG] [01/15/2015 08:21:03.842] [ClusterSystem-akka.actor.default-dispatcher-4] [akka://ClusterSystem/system/cluster/core] now supervising Actor[akka://ClusterSystem/system/cluster/core/daemon#795039659]
+[DEBUG] [01/15/2015 08:21:03.843] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/system/cluster] now supervising Actor[akka://ClusterSystem/system/cluster/metrics#213109446]
+[DEBUG] [01/15/2015 08:21:03.849] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system/cluster/core/publisher] started (akka.cluster.ClusterDomainEventPublisher@11c6d206)
+[DEBUG] [01/15/2015 08:21:03.854] [ClusterSystem-akka.actor.default-dispatcher-4] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/clusterEventBusListener#247015429]
+[DEBUG] [01/15/2015 08:21:03.858] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$Subscribe]
+[DEBUG] [01/15/2015 08:21:03.870] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system/clusterEventBusListener] started (akka.cluster.ClusterReadView$$anonfun$1$$anon$1@23dc33cb)
+[INFO] [01/15/2015 08:21:03.916] [run-main-0] [Cluster(akka://ClusterSystem)] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Registered cluster JMX MBean [akka:type=Cluster]
+[INFO] [01/15/2015 08:21:03.917] [run-main-0] [Cluster(akka://ClusterSystem)] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Started up successfully
+[DEBUG] [01/15/2015 08:21:03.918] [ClusterSystem-akka.actor.default-dispatcher-14] [akka://ClusterSystem/system/cluster/heartbeatReceiver] started (akka.cluster.ClusterHeartbeatReceiver@80574d6)
+[INFO] [01/15/2015 08:21:03.923] [ClusterSystem-akka.actor.default-dispatcher-16] [Cluster(akka://ClusterSystem)] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Metrics will be retreived from MBeans, and may be incorrect on some platforms. To increase metric accuracy add the 'sigar.jar' to the classpath and the appropriate platform-specific native libary to 'java.library.path'. Reason: java.lang.ClassNotFoundException: org.hyperic.sigar.Sigar
+[DEBUG] [01/15/2015 08:21:03.925] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/remote-watcher#632391066]
+[DEBUG] [01/15/2015 08:21:03.930] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/remote-deployment-watcher#-1322708001]
+[DEBUG] [01/15/2015 08:21:03.936] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system] now supervising Actor[akka://ClusterSystem/system/deadLetterListener#1167104407]
+[DEBUG] [01/15/2015 08:21:03.936] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/remote-deployment-watcher] started (akka.remote.RemoteDeploymentWatcher@213c01d)
+[DEBUG] [01/15/2015 08:21:03.938] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/system/deadLetterListener] started (akka.event.DeadLetterListener@1904a712)
+[DEBUG] [01/15/2015 08:21:03.939] [ClusterSystem-akka.actor.default-dispatcher-14] [akka://ClusterSystem/system/remote-watcher] started (akka.cluster.ClusterRemoteWatcher@7537dbf1)
+[INFO] [01/15/2015 08:21:03.939] [ClusterSystem-akka.actor.default-dispatcher-16] [Cluster(akka://ClusterSystem)] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Metrics collection has started successfully
+[DEBUG] [01/15/2015 08:21:03.939] [ClusterSystem-akka.actor.default-dispatcher-16] [akka://ClusterSystem/system/cluster/metrics] started (akka.cluster.ClusterMetricsCollector@2648e756)
+[DEBUG] [01/15/2015 08:21:03.940] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$JoinSeedNodes]
+[DEBUG] [01/15/2015 08:21:03.941] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/system/cluster/core/daemon/autoDown] started (akka.cluster.AutoDown@62eb7e15)
+[DEBUG] [01/15/2015 08:21:03.952] [ClusterSystem-akka.actor.default-dispatcher-14] [akka://ClusterSystem/user] now supervising Actor[akka://ClusterSystem/user/distributedPubSubMediator#-1152922644]
+[DEBUG] [01/15/2015 08:21:03.960] [ClusterSystem-akka.actor.default-dispatcher-16] [akka://ClusterSystem/user/distributedPubSubMediator] started (akka.contrib.pattern.DistributedPubSubMediator@29763ff7)
+[DEBUG] [01/15/2015 08:21:03.960] [ClusterSystem-akka.actor.default-dispatcher-14] [akka://ClusterSystem/user] now supervising Actor[akka://ClusterSystem/user/receptionist#245442095]
+[DEBUG] [01/15/2015 08:21:03.962] [ClusterSystem-akka.actor.default-dispatcher-16] [akka://ClusterSystem/user] now supervising Actor[akka://ClusterSystem/user/frontend#-2064620656]
+[DEBUG] [01/15/2015 08:21:03.963] [ClusterSystem-akka.actor.default-dispatcher-16] [akka://ClusterSystem/user] now supervising Actor[akka://ClusterSystem/user/producer#-1133744934]
+[DEBUG] [01/15/2015 08:21:03.967] [ClusterSystem-akka.actor.default-dispatcher-17] [akka://ClusterSystem/user] now supervising Actor[akka://ClusterSystem/user/consumer#-1921305160]
+[DEBUG] [01/15/2015 08:21:03.967] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon] started (akka.cluster.ClusterCoreDaemon@2da8537b)
+[DEBUG] [01/15/2015 08:21:03.967] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon] now watched by Actor[akka://ClusterSystem/system/cluster/core#-882354071]
+[DEBUG] [01/15/2015 08:21:03.967] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon] now supervising Actor[akka://ClusterSystem/system/cluster/core/daemon/autoDown#-1497196212]
+[DEBUG] [01/15/2015 08:21:03.968] [ClusterSystem-akka.actor.default-dispatcher-16] [akka://ClusterSystem/user/producer] started (worker.WorkProducer@75793a48)
+[DEBUG] [01/15/2015 08:21:03.970] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$Subscribe]
+[DEBUG] [01/15/2015 08:21:03.974] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$CurrentClusterState]
+[DEBUG] [01/15/2015 08:21:03.981] [ClusterSystem-akka.actor.default-dispatcher-2] [akka://ClusterSystem/user/consumer] started (worker.WorkResultConsumer@1d75bc3e)
+[DEBUG] [01/15/2015 08:21:03.982] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon] now supervising Actor[akka://ClusterSystem/system/cluster/core/daemon/joinSeedNodeProcess-1#-1335582671]
+[DEBUG] [01/15/2015 08:21:03.985] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/user/frontend] started (worker.Frontend@2412f0fd)
+[DEBUG] [01/15/2015 08:21:03.986] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/user/frontend] now supervising Actor[akka://ClusterSystem/user/frontend/masterProxy#1510631463]
+[DEBUG] [01/15/2015 08:21:03.987] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$JoinSeedNode$]
+[DEBUG] [01/15/2015 08:21:03.989] [ClusterSystem-akka.actor.default-dispatcher-14] [akka://ClusterSystem/user/receptionist] started (akka.contrib.pattern.ClusterReceptionist@d755029)
+[DEBUG] [01/15/2015 08:21:03.992] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon/joinSeedNodeProcess-1] started (akka.cluster.JoinSeedNodeProcess@6c06ed0c)
+[DEBUG] [01/15/2015 08:21:03.994] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/user/distributedPubSubMediator/results] started (akka.contrib.pattern.DistributedPubSubMediator$Internal$Topic@72373864)
+[DEBUG] [01/15/2015 08:21:03.995] [ClusterSystem-akka.actor.default-dispatcher-4] [akka://ClusterSystem/user/consumer] now watched by Actor[akka://ClusterSystem/user/distributedPubSubMediator/results#-1460161521]
+[DEBUG] [01/15/2015 08:21:04.001] [ClusterSystem-akka.actor.default-dispatcher-16] [akka://ClusterSystem/user/distributedPubSubMediator] now supervising Actor[akka://ClusterSystem/user/distributedPubSubMediator/results#-1460161521]
+[DEBUG] [01/15/2015 08:21:04.006] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$Internal$Subscribed]
+[DEBUG] [01/15/2015 08:21:04.008] [ClusterSystem-akka.actor.default-dispatcher-18] [akka://ClusterSystem/user/frontend/masterProxy] started (akka.contrib.pattern.ClusterSingletonProxy@4cbe83ae)
+[DEBUG] [01/15/2015 08:21:04.010] [ClusterSystem-akka.actor.default-dispatcher-15] [akka://ClusterSystem/user/distributedPubSubMediator/results] now watched by Actor[akka://ClusterSystem/user/distributedPubSubMediator#-1152922644]
+[DEBUG] [01/15/2015 08:21:04.010] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$SubscribeAck]
+[DEBUG] [01/15/2015 08:21:04.024] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0#1765078994]
+[DEBUG] [01/15/2015 08:21:04.028] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1#-837310559]
+[DEBUG] [01/15/2015 08:21:04.038] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] started (akka.remote.ReliableDeliverySupervisor@7d05f1f)
+[DEBUG] [01/15/2015 08:21:04.038] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] now watched by Actor[akka://ClusterSystem/system/endpointManager#-985858379]
+[DEBUG] [01/15/2015 08:21:04.038] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter#1170699300]
+[DEBUG] [01/15/2015 08:21:04.040] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0] started (akka.remote.ReliableDeliverySupervisor@59f40e83)
+[DEBUG] [01/15/2015 08:21:04.040] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0] now watched by Actor[akka://ClusterSystem/system/endpointManager#-985858379]
+[DEBUG] [01/15/2015 08:21:04.040] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter#1717837898]
+[DEBUG] [01/15/2015 08:21:04.046] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] started (akka.remote.EndpointWriter@399e1f0e)
+[DEBUG] [01/15/2015 08:21:04.046] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter] started (akka.remote.EndpointWriter@3c08edaf)
+[DEBUG] [01/15/2015 08:21:04.046] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] now watched by Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1#-837310559]
+[DEBUG] [01/15/2015 08:21:04.046] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter] now watched by Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0#1765078994]
+[DEBUG] [01/15/2015 08:21:04.057] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0] now supervising Actor[akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1#-125821646]
+[DEBUG] [01/15/2015 08:21:04.059] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0] now supervising Actor[akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-2#990614623]
+[DEBUG] [01/15/2015 08:21:04.067] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] started (akka.remote.transport.ProtocolStateActor@543c5bbd)
+[DEBUG] [01/15/2015 08:21:04.067] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-2] started (akka.remote.transport.ProtocolStateActor@46ab007f)
+[DEBUG] [01/15/2015 08:21:04.087] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.actor.Status$Failure]
+[DEBUG] [01/15/2015 08:21:04.100] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] stopped
+[WARN] [01/15/2015 08:21:04.108] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] AssociationError [akka.tcp://ClusterSystem@127.0.0.1:3001] -> [akka.tcp://ClusterSystem@127.0.0.1:2552]: Error [Invalid address: akka.tcp://ClusterSystem@127.0.0.1:2552] [
+akka.remote.InvalidAssociation: Invalid address: akka.tcp://ClusterSystem@127.0.0.1:2552
+Caused by: akka.remote.transport.Transport$InvalidAssociationException: Connection refused: /127.0.0.1:2552
+]
+[WARN] [01/15/2015 08:21:04.115] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [Remoting] Tried to associate with unreachable remote address [akka.tcp://ClusterSystem@127.0.0.1:2552]. Address is now gated for 5000 ms, all messages to this address will be delivered to dead letters. Reason: Connection refused: /127.0.0.1:2552
+[DEBUG] [01/15/2015 08:21:04.119] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] stopping
+[DEBUG] [01/15/2015 08:21:04.120] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] no longer watched by Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1#-837310559]
+[DEBUG] [01/15/2015 08:21:04.121] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoin$]
+[INFO] [01/15/2015 08:21:04.123] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/deadLetters] Message [akka.cluster.InternalClusterAction$InitJoin$] from Actor[akka://ClusterSystem/system/cluster/core/daemon/joinSeedNodeProcess-1#-1335582671] to Actor[akka://ClusterSystem/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[DEBUG] [01/15/2015 08:21:04.124] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] Disassociated [akka.tcp://ClusterSystem@127.0.0.1:3001] -> [akka.tcp://ClusterSystem@127.0.0.1:2552]
+[DEBUG] [01/15/2015 08:21:04.124] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] stopped
+[DEBUG] [01/15/2015 08:21:04.128] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1] stopped
+[DEBUG] [01/15/2015 08:21:04.128] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.actor.Terminated]
+[DEBUG] [01/15/2015 08:21:04.129] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager] received AutoReceiveMessage Envelope(Terminated(Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1#-837310559]),Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1#-837310559])
+[DEBUG] [01/15/2015 08:21:04.145] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.remote.ReliableDeliverySupervisor$GotUid]
+[DEBUG] [01/15/2015 08:21:04.155] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter] Associated [akka.tcp://ClusterSystem@127.0.0.1:3001] -> [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:04.165] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter/endpointReader-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0] started (akka.remote.EndpointReader@7c356363)
+[DEBUG] [01/15/2015 08:21:04.165] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter/endpointReader-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0] now watched by Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter#1717837898]
+[DEBUG] [01/15/2015 08:21:04.175] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter] Drained buffer with maxWriteCount: 50, fullBackoffCount: 1, smallBackoffCount: 0, noBackoffCount: 0 , adaptiveBackoff: 1000
+[DEBUG] [01/15/2015 08:21:04.175] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0/endpointWriter/endpointReader-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2551-0#-283417377]
+[DEBUG] [01/15/2015 08:21:04.211] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.remote.EndpointWriter$AckIdleCheckTimer$]
+[DEBUG] [01/15/2015 08:21:04.217] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinAck]
+[DEBUG] [01/15/2015 08:21:04.218] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterUserAction$JoinTo]
+[DEBUG] [01/15/2015 08:21:04.220] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon/joinSeedNodeProcess-1] stopped
+[DEBUG] [01/15/2015 08:21:04.221] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Join]
+[DEBUG] [01/15/2015 08:21:04.399] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Welcome]
+[INFO] [01/15/2015 08:21:04.461] [ClusterSystem-akka.actor.default-dispatcher-17] [Cluster(akka://ClusterSystem)] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Welcome from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:04.462] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$PublishChanges]
+[DEBUG] [01/15/2015 08:21:04.476] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipEnvelope]
+[DEBUG] [01/15/2015 08:21:04.479] [ClusterSystem-akka.actor.default-dispatcher-17] [akka://ClusterSystem/system/cluster/core/daemon] now supervising Actor[akka://ClusterSystem/system/cluster/core/daemon/heartbeatSender#-368675473]
+[DEBUG] [01/15/2015 08:21:04.483] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$MemberUp]
+[DEBUG] [01/15/2015 08:21:04.484] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/system/cluster/core/daemon/heartbeatSender] started (akka.cluster.ClusterHeartbeatSender@63307906)
+[DEBUG] [01/15/2015 08:21:04.490] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Creating singleton identification timer...
+[DEBUG] [01/15/2015 08:21:04.491] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.contrib.pattern.ClusterSingletonProxy$TryToIdentifySingleton$]
+[DEBUG] [01/15/2015 08:21:04.495] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Trying to identify singleton at akka.tcp://ClusterSystem@127.0.0.1:2551/user/master/active
+[DEBUG] [01/15/2015 08:21:04.496] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.actor.Identify]
+[DEBUG] [01/15/2015 08:21:04.498] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$LeaderChanged]
+[DEBUG] [01/15/2015 08:21:04.505] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$RoleLeaderChanged]
+[DEBUG] [01/15/2015 08:21:04.505] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.actor.ActorIdentity]
+[INFO] [01/15/2015 08:21:04.507] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Singleton identified: akka.tcp://ClusterSystem@127.0.0.1:2551/user/master/active
+[DEBUG] [01/15/2015 08:21:04.509] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$SeenChanged]
+[DEBUG] [01/15/2015 08:21:04.511] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$ReachabilityChanged]
+[DEBUG] [01/15/2015 08:21:04.940] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Receiving gossip from [UniqueAddress(akka.tcp://ClusterSystem@127.0.0.1:2551,-562661095)]
+[DEBUG] [01/15/2015 08:21:04.941] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$GossipTick$]
+[DEBUG] [01/15/2015 08:21:04.941] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.remote.RemoteWatcher$HeartbeatTick$]
+[DEBUG] [01/15/2015 08:21:04.941] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.remote.RemoteWatcher$ReapUnreachableTick$]
+[DEBUG] [01/15/2015 08:21:04.945] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipStatus]
+[DEBUG] [01/15/2015 08:21:04.954] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$LeaderActionsTick$]
+[DEBUG] [01/15/2015 08:21:04.954] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$ReapUnreachableTick$]
+[DEBUG] [01/15/2015 08:21:04.968] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.contrib.pattern.protobuf.DistributedPubSubMessageSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$Internal$Status]
+[DEBUG] [01/15/2015 08:21:04.972] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$Internal$GossipTick$]
+[DEBUG] [01/15/2015 08:21:04.974] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.contrib.pattern.protobuf.DistributedPubSubMessageSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$Internal$Delta]
+[DEBUG] [01/15/2015 08:21:04.994] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$Heartbeat]
+[DEBUG] [01/15/2015 08:21:04.995] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatRsp]
+[DEBUG] [01/15/2015 08:21:05.503] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatTick$]
+[DEBUG] [01/15/2015 08:21:05.505] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - First Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:05.510] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:05.970] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.MetricsGossipEnvelope]
+[DEBUG] [01/15/2015 08:21:06.492] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:06.496] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:06.941] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$MetricsTick$]
+[DEBUG] [01/15/2015 08:21:06.948] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.InternalClusterAction$PublishEvent]
+[DEBUG] [01/15/2015 08:21:06.961] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterEvent$ClusterMetricsChanged]
+[DEBUG] [01/15/2015 08:21:07.503] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:07.509] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:08.493] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:08.497] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:08.983] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [worker.WorkProducer$Tick$]
+[INFO] [01/15/2015 08:21:08.985] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 1
+00:05 TRACE: [kryo] Register class ID 0: int (com.esotericsoftware.kryo.serializers.DefaultSerializers$IntSerializer)
+00:05 TRACE: [kryo] Register class ID 1: String (com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer)
+00:05 TRACE: [kryo] Register class ID 2: float (com.esotericsoftware.kryo.serializers.DefaultSerializers$FloatSerializer)
+00:05 TRACE: [kryo] Register class ID 3: boolean (com.esotericsoftware.kryo.serializers.DefaultSerializers$BooleanSerializer)
+00:05 TRACE: [kryo] Register class ID 4: byte (com.esotericsoftware.kryo.serializers.DefaultSerializers$ByteSerializer)
+00:05 TRACE: [kryo] Register class ID 5: char (com.esotericsoftware.kryo.serializers.DefaultSerializers$CharSerializer)
+00:05 TRACE: [kryo] Register class ID 6: short (com.esotericsoftware.kryo.serializers.DefaultSerializers$ShortSerializer)
+00:05 TRACE: [kryo] Register class ID 7: long (com.esotericsoftware.kryo.serializers.DefaultSerializers$LongSerializer)
+00:05 TRACE: [kryo] Register class ID 8: double (com.esotericsoftware.kryo.serializers.DefaultSerializers$DoubleSerializer)
+00:05 TRACE: [kryo] Register class ID 9: void (com.esotericsoftware.kryo.serializers.DefaultSerializers$VoidSerializer)
+00:05 TRACE: [kryo] Register class ID 10: scala.Enumeration$Val (com.romix.scala.serialization.kryo.EnumerationSerializer)
+00:05 TRACE: [kryo] Register class ID 11: scala.Enumeration$Value (com.romix.scala.serialization.kryo.EnumerationSerializer)
+00:05 TRACE: [kryo] Registration required: false
+00:05 TRACE: [kryo] Optimize ints: true
+00:05 TRACE: [kryo] Field workId: class java.lang.String
+00:05 TRACE: [kryo] Field job: class java.lang.Object
+00:05 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:05 TRACE: [kryo] Field workId: class java.lang.String
+00:05 TRACE: [kryo] Field job: class java.lang.Object
+00:05 TRACE: [kryo] Register class ID 20: worker.Work (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:05 TRACE: [kryo] Optimize ints: true
+00:05 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:05 TRACE: [kryo] Register class ID 22: scala.Int (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:05 TRACE: [kryo] Optimize ints: true
+00:05 TRACE: [kryo] Field workId: class java.lang.String
+00:05 TRACE: [kryo] Field result: class java.lang.Object
+00:05 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:05 TRACE: [kryo] Field workId: class java.lang.String
+00:05 TRACE: [kryo] Field result: class java.lang.Object
+00:05 TRACE: [kryo] Register class ID 21: worker.WorkResult (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:05 TRACE: [kryo] Write class 20: worker.Work
+00:05 TRACE: [kryo] Write initial object reference 0: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 DEBUG: [kryo] Write: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:05 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Write class 0: Integer
+00:05 TRACE: [kryo] Write: 1
+00:05 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Write initial object reference 1: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 TRACE: [kryo] Write: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 TRACE: [kryo] Object graph complete.
+00:05 TRACE: [kryo] Read class 20: worker.Work
+00:05 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:05 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Read class 0: int
+00:05 TRACE: [kryo] Read: 1
+00:05 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Read initial object reference 1: String
+00:05 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 DEBUG: [kryo] Read: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 TRACE: [kryo] Object graph complete.
+00:05 TRACE: [kryo] Write class 20: worker.Work
+00:05 TRACE: [kryo] Write initial object reference 0: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 DEBUG: [kryo] Write: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:05 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Write class 0: Integer
+00:05 TRACE: [kryo] Write: 1
+00:05 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Write initial object reference 1: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 TRACE: [kryo] Write: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 TRACE: [kryo] Object graph complete.
+00:05 TRACE: [kryo] Read class 20: worker.Work
+00:05 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:05 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Read class 0: int
+00:05 TRACE: [kryo] Read: 1
+00:05 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Read initial object reference 1: String
+00:05 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 DEBUG: [kryo] Read: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 TRACE: [kryo] Object graph complete.
+00:05 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:08.996] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 TRACE: [kryo] Write initial object reference 0: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 DEBUG: [kryo] Write: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:05 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:05 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Write class 0: Integer
+00:05 TRACE: [kryo] Write: 1
+00:05 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Write initial object reference 1: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 TRACE: [kryo] Write: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:05 TRACE: [kryo] Object graph complete.
+[DEBUG] [01/15/2015 08:21:09.046] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [worker.Frontend$Ok$]
+[DEBUG] [01/15/2015 08:21:09.492] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:09.496] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:10.503] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:10.507] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:10.523] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.cluster.ClusterHeartbeatSender$ExpectedFirstHeartbeat]
+[DEBUG] [01/15/2015 08:21:11.491] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:11.496] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:12.502] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:12.505] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:09 TRACE: [kryo] Write class 20: worker.Work
+[INFO] [01/15/2015 08:21:13.061] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 2
+00:09 TRACE: [kryo] Write initial object reference 0: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 DEBUG: [kryo] Write: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:09 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:09 TRACE: [kryo] Write class 0: Integer
+00:09 TRACE: [kryo] Write: 2
+00:09 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:09 TRACE: [kryo] Write initial object reference 1: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 TRACE: [kryo] Write: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 TRACE: [kryo] Object graph complete.
+00:09 TRACE: [kryo] Read class 20: worker.Work
+00:09 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:09 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:09 TRACE: [kryo] Read class 0: int
+00:09 TRACE: [kryo] Read: 2
+00:09 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:09 TRACE: [kryo] Read initial object reference 1: String
+00:09 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 DEBUG: [kryo] Read: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 TRACE: [kryo] Object graph complete.
+00:09 TRACE: [kryo] Write class 20: worker.Work
+00:09 TRACE: [kryo] Write initial object reference 0: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 DEBUG: [kryo] Write: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:09 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:09 TRACE: [kryo] Write class 0: Integer
+00:09 TRACE: [kryo] Write: 2
+00:09 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:09 TRACE: [kryo] Write initial object reference 1: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 TRACE: [kryo] Write: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 TRACE: [kryo] Object graph complete.
+00:09 TRACE: [kryo] Read class 20: worker.Work
+00:09 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:09 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:09 TRACE: [kryo] Read class 0: int
+00:09 TRACE: [kryo] Read: 2
+00:09 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:09 TRACE: [kryo] Read initial object reference 1: String
+00:09 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 DEBUG: [kryo] Read: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 TRACE: [kryo] Object graph complete.
+00:09 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:13.063] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 TRACE: [kryo] Write initial object reference 0: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 DEBUG: [kryo] Write: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:09 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:09 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:09 TRACE: [kryo] Write class 0: Integer
+00:09 TRACE: [kryo] Write: 2
+00:09 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:09 TRACE: [kryo] Write initial object reference 1: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 TRACE: [kryo] Write: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:09 TRACE: [kryo] Object graph complete.
+[DEBUG] [01/15/2015 08:21:13.502] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:13.506] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:14.501] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:14.506] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:15.501] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:15.504] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:16.503] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:16.506] [ClusterSystem-akka.actor.default-dispatcher-14] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:17.491] [ClusterSystem-akka.actor.default-dispatcher-14] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:17.494] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:18.502] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:18.505] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:19.501] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:19.505] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:19.518] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0] now supervising Actor[akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A50377-3#-1912539879]
+[DEBUG] [01/15/2015 08:21:19.519] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A50377-3] started (akka.remote.transport.ProtocolStateActor@2e3b3e5d)
+[DEBUG] [01/15/2015 08:21:19.520] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [Remoting] Associated [akka.tcp://ClusterSystem@127.0.0.1:3001] <- [akka.tcp://WorkerSystem@127.0.0.1:50374]
+[DEBUG] [01/15/2015 08:21:19.521] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2#-1843853858]
+[DEBUG] [01/15/2015 08:21:19.522] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2] started (akka.remote.ReliableDeliverySupervisor@337b6361)
+[DEBUG] [01/15/2015 08:21:19.522] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2] now watched by Actor[akka://ClusterSystem/system/endpointManager#-985858379]
+[DEBUG] [01/15/2015 08:21:19.522] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter#621108323]
+[DEBUG] [01/15/2015 08:21:19.522] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] started (akka.remote.EndpointWriter@69b98fae)
+[DEBUG] [01/15/2015 08:21:19.523] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] now watched by Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2#-1843853858]
+[DEBUG] [01/15/2015 08:21:19.523] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] now supervising Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter/endpointReader-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-0#-21311259]
+[DEBUG] [01/15/2015 08:21:19.523] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter/endpointReader-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-0] started (akka.remote.EndpointReader@15881ebc)
+[DEBUG] [01/15/2015 08:21:19.523] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter/endpointReader-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-0] now watched by Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter#621108323]
+[DEBUG] [01/15/2015 08:21:19.526] [ClusterSystem-akka.actor.default-dispatcher-19] [akka://ClusterSystem/user/receptionist] received AutoReceiveMessage Envelope(Identify(None),Actor[akka.tcp://WorkerSystem@127.0.0.1:50374/user/clusterClient#1169015651])
+[DEBUG] [01/15/2015 08:21:19.529] [ClusterSystem-akka.actor.default-dispatcher-19] [akka://ClusterSystem/user/receptionist] received AutoReceiveMessage Envelope(Identify(None),Actor[akka.tcp://WorkerSystem@127.0.0.1:50374/user/clusterClient#1169015651])
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 1 * 1 = 1
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 DEBUG: [kryo] Read: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 21: worker.WorkResult
+00:16 TRACE: [kryo] Write initial object reference 0: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 DEBUG: [kryo] Write: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:16 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Write class 1: String
+00:16 TRACE: [kryo] Write initial object reference 1: 1 * 1 = 1
+00:16 TRACE: [kryo] Write: 1 * 1 = 1
+00:16 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Write initial object reference 2: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 TRACE: [kryo] Write: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 1 * 1 = 1
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 DEBUG: [kryo] Read: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 21: worker.WorkResult
+00:16 TRACE: [kryo] Write initial object reference 0: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 DEBUG: [kryo] Write: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:16 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Write class 1: String
+00:16 TRACE: [kryo] Write initial object reference 1: 1 * 1 = 1
+00:16 TRACE: [kryo] Write: 1 * 1 = 1
+00:16 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Write initial object reference 2: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 TRACE: [kryo] Write: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 1 * 1 = 1
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:16 DEBUG: [kryo] Read: WorkResult(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1 * 1 = 1)
+00:16 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:19.661] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 1 * 1 = 1
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 2 * 2 = 4
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 DEBUG: [kryo] Read: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 21: worker.WorkResult
+00:16 TRACE: [kryo] Write initial object reference 0: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 DEBUG: [kryo] Write: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:16 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Write class 1: String
+00:16 TRACE: [kryo] Write initial object reference 1: 2 * 2 = 4
+00:16 TRACE: [kryo] Write: 2 * 2 = 4
+00:16 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Write initial object reference 2: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 TRACE: [kryo] Write: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 2 * 2 = 4
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 DEBUG: [kryo] Read: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 21: worker.WorkResult
+00:16 TRACE: [kryo] Write initial object reference 0: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 DEBUG: [kryo] Write: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:16 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Write class 1: String
+00:16 TRACE: [kryo] Write initial object reference 1: 2 * 2 = 4
+00:16 TRACE: [kryo] Write: 2 * 2 = 4
+00:16 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Write initial object reference 2: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 TRACE: [kryo] Write: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 2 * 2 = 4
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:16 DEBUG: [kryo] Read: WorkResult(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2 * 2 = 4)
+00:16 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:19.691] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 2 * 2 = 4
+00:16 TRACE: [kryo] Write class 20: worker.Work
+00:16 TRACE: [kryo] Write initial object reference 0: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+[INFO] [01/15/2015 08:21:20.092] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 3
+00:16 DEBUG: [kryo] Write: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:16 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:16 TRACE: [kryo] Write class 0: Integer
+00:16 TRACE: [kryo] Write: 3
+00:16 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:16 TRACE: [kryo] Write initial object reference 1: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Write: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 20: worker.Work
+00:16 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:16 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:16 TRACE: [kryo] Read class 0: int
+00:16 TRACE: [kryo] Read: 3
+00:16 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 DEBUG: [kryo] Read: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 20: worker.Work
+00:16 TRACE: [kryo] Write initial object reference 0: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 DEBUG: [kryo] Write: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:16 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:16 TRACE: [kryo] Write class 0: Integer
+00:16 TRACE: [kryo] Write: 3
+00:16 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:16 TRACE: [kryo] Write initial object reference 1: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Write: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 20: worker.Work
+00:16 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:16 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:16 TRACE: [kryo] Read class 0: int
+00:16 TRACE: [kryo] Read: 3
+00:16 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 DEBUG: [kryo] Read: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:20.096] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 TRACE: [kryo] Write initial object reference 0: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 DEBUG: [kryo] Write: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:16 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:16 TRACE: [kryo] Write class 0: Integer
+00:16 TRACE: [kryo] Write: 3
+00:16 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:16 TRACE: [kryo] Write initial object reference 1: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Write: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 3 * 3 = 9
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 DEBUG: [kryo] Read: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 21: worker.WorkResult
+00:16 TRACE: [kryo] Write initial object reference 0: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 DEBUG: [kryo] Write: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:16 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Write class 1: String
+00:16 TRACE: [kryo] Write initial object reference 1: 3 * 3 = 9
+00:16 TRACE: [kryo] Write: 3 * 3 = 9
+00:16 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Write initial object reference 2: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Write: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 3 * 3 = 9
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 DEBUG: [kryo] Read: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Write class 21: worker.WorkResult
+00:16 TRACE: [kryo] Write initial object reference 0: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 DEBUG: [kryo] Write: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:16 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Write class 1: String
+00:16 TRACE: [kryo] Write initial object reference 1: 3 * 3 = 9
+00:16 TRACE: [kryo] Write: 3 * 3 = 9
+00:16 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Write initial object reference 2: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Write: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 TRACE: [kryo] Object graph complete.
+00:16 TRACE: [kryo] Read class 21: worker.WorkResult
+00:16 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:16 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:16 TRACE: [kryo] Read class 1: String
+00:16 TRACE: [kryo] Read initial object reference 1: String
+00:16 TRACE: [kryo] Read: 3 * 3 = 9
+00:16 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=13
+00:16 TRACE: [kryo] Read initial object reference 2: String
+00:16 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:16 DEBUG: [kryo] Read: WorkResult(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3 * 3 = 9)
+00:16 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:20.135] [ClusterSystem-akka.actor.default-dispatcher-14] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 3 * 3 = 9
+[DEBUG] [01/15/2015 08:21:20.501] [ClusterSystem-akka.actor.default-dispatcher-14] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:20.505] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:21.501] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:21.505] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:22.502] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:22.506] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:23.501] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:23.505] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:20 TRACE: [kryo] Write class 20: worker.Work
+00:20 TRACE: [kryo] Write initial object reference 0: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 DEBUG: [kryo] Write: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+[INFO] [01/15/2015 08:21:24.121] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 4
+00:20 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:20 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:20 TRACE: [kryo] Write class 0: Integer
+00:20 TRACE: [kryo] Write: 4
+00:20 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:20 TRACE: [kryo] Write initial object reference 1: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Write: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Read class 20: worker.Work
+00:20 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:20 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:20 TRACE: [kryo] Read class 0: int
+00:20 TRACE: [kryo] Read: 4
+00:20 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:20 TRACE: [kryo] Read initial object reference 1: String
+00:20 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 DEBUG: [kryo] Read: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Write class 20: worker.Work
+00:20 TRACE: [kryo] Write initial object reference 0: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 DEBUG: [kryo] Write: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:20 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:20 TRACE: [kryo] Write class 0: Integer
+00:20 TRACE: [kryo] Write: 4
+00:20 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:20 TRACE: [kryo] Write initial object reference 1: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Write: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Read class 20: worker.Work
+00:20 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:20 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:20 TRACE: [kryo] Read class 0: int
+00:20 TRACE: [kryo] Read: 4
+00:20 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:20 TRACE: [kryo] Read initial object reference 1: String
+00:20 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 DEBUG: [kryo] Read: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:24.123] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 TRACE: [kryo] Write initial object reference 0: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 DEBUG: [kryo] Write: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:20 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:20 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:20 TRACE: [kryo] Write class 0: Integer
+00:20 TRACE: [kryo] Write: 4
+00:20 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:20 TRACE: [kryo] Write initial object reference 1: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Write: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Read class 21: worker.WorkResult
+00:20 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:20 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:20 TRACE: [kryo] Read class 1: String
+00:20 TRACE: [kryo] Read initial object reference 1: String
+00:20 TRACE: [kryo] Read: 4 * 4 = 16
+00:20 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:20 TRACE: [kryo] Read initial object reference 2: String
+00:20 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 DEBUG: [kryo] Read: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Write class 21: worker.WorkResult
+00:20 TRACE: [kryo] Write initial object reference 0: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 DEBUG: [kryo] Write: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:20 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:20 TRACE: [kryo] Write class 1: String
+00:20 TRACE: [kryo] Write initial object reference 1: 4 * 4 = 16
+00:20 TRACE: [kryo] Write: 4 * 4 = 16
+00:20 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:20 TRACE: [kryo] Write initial object reference 2: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Write: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Read class 21: worker.WorkResult
+00:20 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:20 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:20 TRACE: [kryo] Read class 1: String
+00:20 TRACE: [kryo] Read initial object reference 1: String
+00:20 TRACE: [kryo] Read: 4 * 4 = 16
+00:20 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:20 TRACE: [kryo] Read initial object reference 2: String
+00:20 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 DEBUG: [kryo] Read: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Write class 21: worker.WorkResult
+00:20 TRACE: [kryo] Write initial object reference 0: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 DEBUG: [kryo] Write: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:20 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:20 TRACE: [kryo] Write class 1: String
+00:20 TRACE: [kryo] Write initial object reference 1: 4 * 4 = 16
+00:20 TRACE: [kryo] Write: 4 * 4 = 16
+00:20 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:20 TRACE: [kryo] Write initial object reference 2: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Write: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 TRACE: [kryo] Object graph complete.
+00:20 TRACE: [kryo] Read class 21: worker.WorkResult
+00:20 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:20 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:20 TRACE: [kryo] Read class 1: String
+00:20 TRACE: [kryo] Read initial object reference 1: String
+00:20 TRACE: [kryo] Read: 4 * 4 = 16
+00:20 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:20 TRACE: [kryo] Read initial object reference 2: String
+00:20 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:20 DEBUG: [kryo] Read: WorkResult(da36fefc-4865-4a7c-a700-bd0d13409b2b,4 * 4 = 16)
+00:20 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:24.155] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 4 * 4 = 16
+[DEBUG] [01/15/2015 08:21:24.503] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:24.507] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:25.491] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:25.495] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:26.502] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:26.505] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:27.501] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:27.505] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:28.501] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:28.504] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:29.503] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:29.507] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:26 TRACE: [kryo] Write class 20: worker.Work
+00:26 TRACE: [kryo] Write initial object reference 0: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 DEBUG: [kryo] Write: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:26 TRACE: [kryo] Write field: job (worker.Work) pos=2
+[INFO] [01/15/2015 08:21:30.153] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 5
+00:26 TRACE: [kryo] Write class 0: Integer
+00:26 TRACE: [kryo] Write: 5
+00:26 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:26 TRACE: [kryo] Write initial object reference 1: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Write: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Read class 20: worker.Work
+00:26 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:26 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:26 TRACE: [kryo] Read class 0: int
+00:26 TRACE: [kryo] Read: 5
+00:26 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:26 TRACE: [kryo] Read initial object reference 1: String
+00:26 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 DEBUG: [kryo] Read: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Write class 20: worker.Work
+00:26 TRACE: [kryo] Write initial object reference 0: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 DEBUG: [kryo] Write: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:26 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:26 TRACE: [kryo] Write class 0: Integer
+00:26 TRACE: [kryo] Write: 5
+00:26 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:26 TRACE: [kryo] Write initial object reference 1: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Write: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Read class 20: worker.Work
+00:26 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:26 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:26 TRACE: [kryo] Read class 0: int
+00:26 TRACE: [kryo] Read: 5
+00:26 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:26 TRACE: [kryo] Read initial object reference 1: String
+00:26 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 DEBUG: [kryo] Read: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:30.156] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 TRACE: [kryo] Write initial object reference 0: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 DEBUG: [kryo] Write: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:26 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:26 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:26 TRACE: [kryo] Write class 0: Integer
+00:26 TRACE: [kryo] Write: 5
+00:26 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:26 TRACE: [kryo] Write initial object reference 1: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Write: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Read class 21: worker.WorkResult
+00:26 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:26 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:26 TRACE: [kryo] Read class 1: String
+00:26 TRACE: [kryo] Read initial object reference 1: String
+00:26 TRACE: [kryo] Read: 5 * 5 = 25
+00:26 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:26 TRACE: [kryo] Read initial object reference 2: String
+00:26 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 DEBUG: [kryo] Read: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Write class 21: worker.WorkResult
+00:26 TRACE: [kryo] Write initial object reference 0: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 DEBUG: [kryo] Write: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:26 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:26 TRACE: [kryo] Write class 1: String
+00:26 TRACE: [kryo] Write initial object reference 1: 5 * 5 = 25
+00:26 TRACE: [kryo] Write: 5 * 5 = 25
+00:26 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:26 TRACE: [kryo] Write initial object reference 2: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Write: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Read class 21: worker.WorkResult
+00:26 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:26 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:26 TRACE: [kryo] Read class 1: String
+00:26 TRACE: [kryo] Read initial object reference 1: String
+00:26 TRACE: [kryo] Read: 5 * 5 = 25
+00:26 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:26 TRACE: [kryo] Read initial object reference 2: String
+00:26 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 DEBUG: [kryo] Read: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Write class 21: worker.WorkResult
+00:26 TRACE: [kryo] Write initial object reference 0: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 DEBUG: [kryo] Write: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:26 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:26 TRACE: [kryo] Write class 1: String
+00:26 TRACE: [kryo] Write initial object reference 1: 5 * 5 = 25
+00:26 TRACE: [kryo] Write: 5 * 5 = 25
+00:26 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:26 TRACE: [kryo] Write initial object reference 2: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Write: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 TRACE: [kryo] Object graph complete.
+00:26 TRACE: [kryo] Read class 21: worker.WorkResult
+00:26 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:26 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:26 TRACE: [kryo] Read class 1: String
+00:26 TRACE: [kryo] Read initial object reference 1: String
+00:26 TRACE: [kryo] Read: 5 * 5 = 25
+00:26 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:26 TRACE: [kryo] Read initial object reference 2: String
+00:26 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:26 DEBUG: [kryo] Read: WorkResult(9b4eb81b-8f10-477e-b66a-ca475580f879,5 * 5 = 25)
+00:26 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:30.188] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 5 * 5 = 25
+[DEBUG] [01/15/2015 08:21:30.491] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:30.495] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:31.503] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:31.508] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:32.492] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:32.495] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:33.501] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:33.505] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:30 TRACE: [kryo] Write class 20: worker.Work
+00:30 TRACE: [kryo] Write initial object reference 0: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+[INFO] [01/15/2015 08:21:34.181] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 6
+00:30 DEBUG: [kryo] Write: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:30 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:30 TRACE: [kryo] Write class 0: Integer
+00:30 TRACE: [kryo] Write: 6
+00:30 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:30 TRACE: [kryo] Write initial object reference 1: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Write: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Read class 20: worker.Work
+00:30 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:30 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:30 TRACE: [kryo] Read class 0: int
+00:30 TRACE: [kryo] Read: 6
+00:30 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:30 TRACE: [kryo] Read initial object reference 1: String
+00:30 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 DEBUG: [kryo] Read: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Write class 20: worker.Work
+00:30 TRACE: [kryo] Write initial object reference 0: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 DEBUG: [kryo] Write: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:30 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:30 TRACE: [kryo] Write class 0: Integer
+00:30 TRACE: [kryo] Write: 6
+00:30 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:30 TRACE: [kryo] Write initial object reference 1: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Write: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Read class 20: worker.Work
+00:30 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:30 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:30 TRACE: [kryo] Read class 0: int
+00:30 TRACE: [kryo] Read: 6
+00:30 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:30 TRACE: [kryo] Read initial object reference 1: String
+00:30 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 DEBUG: [kryo] Read: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:34.184] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 TRACE: [kryo] Write initial object reference 0: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 DEBUG: [kryo] Write: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:30 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:30 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:30 TRACE: [kryo] Write class 0: Integer
+00:30 TRACE: [kryo] Write: 6
+00:30 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:30 TRACE: [kryo] Write initial object reference 1: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Write: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Read class 21: worker.WorkResult
+00:30 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:30 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:30 TRACE: [kryo] Read class 1: String
+00:30 TRACE: [kryo] Read initial object reference 1: String
+00:30 TRACE: [kryo] Read: 6 * 6 = 36
+00:30 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:30 TRACE: [kryo] Read initial object reference 2: String
+00:30 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 DEBUG: [kryo] Read: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Write class 21: worker.WorkResult
+00:30 TRACE: [kryo] Write initial object reference 0: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 DEBUG: [kryo] Write: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:30 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:30 TRACE: [kryo] Write class 1: String
+00:30 TRACE: [kryo] Write initial object reference 1: 6 * 6 = 36
+00:30 TRACE: [kryo] Write: 6 * 6 = 36
+00:30 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:30 TRACE: [kryo] Write initial object reference 2: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Write: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Read class 21: worker.WorkResult
+00:30 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:30 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:30 TRACE: [kryo] Read class 1: String
+00:30 TRACE: [kryo] Read initial object reference 1: String
+00:30 TRACE: [kryo] Read: 6 * 6 = 36
+00:30 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:30 TRACE: [kryo] Read initial object reference 2: String
+00:30 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 DEBUG: [kryo] Read: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Write class 21: worker.WorkResult
+00:30 TRACE: [kryo] Write initial object reference 0: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 DEBUG: [kryo] Write: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:30 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:30 TRACE: [kryo] Write class 1: String
+00:30 TRACE: [kryo] Write initial object reference 1: 6 * 6 = 36
+00:30 TRACE: [kryo] Write: 6 * 6 = 36
+00:30 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:30 TRACE: [kryo] Write initial object reference 2: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Write: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 TRACE: [kryo] Object graph complete.
+00:30 TRACE: [kryo] Read class 21: worker.WorkResult
+00:30 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:30 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:30 TRACE: [kryo] Read class 1: String
+00:30 TRACE: [kryo] Read initial object reference 1: String
+00:30 TRACE: [kryo] Read: 6 * 6 = 36
+00:30 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:30 TRACE: [kryo] Read initial object reference 2: String
+00:30 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:30 DEBUG: [kryo] Read: WorkResult(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6 * 6 = 36)
+00:30 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:34.214] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 6 * 6 = 36
+[DEBUG] [01/15/2015 08:21:34.501] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:34.504] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:35.501] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:35.505] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:36.502] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:36.506] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:37.501] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:37.505] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:38.501] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:38.504] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:39.501] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:39.505] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:40.501] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:40.504] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:41.503] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:41.510] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:42.501] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:42.506] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:39 TRACE: [kryo] Write class 20: worker.Work
+00:39 TRACE: [kryo] Write initial object reference 0: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 DEBUG: [kryo] Write: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+[INFO] [01/15/2015 08:21:43.213] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 7
+00:39 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:39 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:39 TRACE: [kryo] Write class 0: Integer
+00:39 TRACE: [kryo] Write: 7
+00:39 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:39 TRACE: [kryo] Write initial object reference 1: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Write: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Read class 20: worker.Work
+00:39 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:39 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:39 TRACE: [kryo] Read class 0: int
+00:39 TRACE: [kryo] Read: 7
+00:39 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:39 TRACE: [kryo] Read initial object reference 1: String
+00:39 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 DEBUG: [kryo] Read: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Write class 20: worker.Work
+00:39 TRACE: [kryo] Write initial object reference 0: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 DEBUG: [kryo] Write: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:39 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:39 TRACE: [kryo] Write class 0: Integer
+00:39 TRACE: [kryo] Write: 7
+00:39 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:39 TRACE: [kryo] Write initial object reference 1: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Write: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Read class 20: worker.Work
+00:39 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:39 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:39 TRACE: [kryo] Read class 0: int
+00:39 TRACE: [kryo] Read: 7
+00:39 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:39 TRACE: [kryo] Read initial object reference 1: String
+00:39 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 DEBUG: [kryo] Read: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:43.216] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 TRACE: [kryo] Write initial object reference 0: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 DEBUG: [kryo] Write: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:39 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:39 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:39 TRACE: [kryo] Write class 0: Integer
+00:39 TRACE: [kryo] Write: 7
+00:39 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:39 TRACE: [kryo] Write initial object reference 1: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Write: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Read class 21: worker.WorkResult
+00:39 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:39 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:39 TRACE: [kryo] Read class 1: String
+00:39 TRACE: [kryo] Read initial object reference 1: String
+00:39 TRACE: [kryo] Read: 7 * 7 = 49
+00:39 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:39 TRACE: [kryo] Read initial object reference 2: String
+00:39 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 DEBUG: [kryo] Read: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Write class 21: worker.WorkResult
+00:39 TRACE: [kryo] Write initial object reference 0: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 DEBUG: [kryo] Write: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:39 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:39 TRACE: [kryo] Write class 1: String
+00:39 TRACE: [kryo] Write initial object reference 1: 7 * 7 = 49
+00:39 TRACE: [kryo] Write: 7 * 7 = 49
+00:39 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:39 TRACE: [kryo] Write initial object reference 2: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Write: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Read class 21: worker.WorkResult
+00:39 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:39 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:39 TRACE: [kryo] Read class 1: String
+00:39 TRACE: [kryo] Read initial object reference 1: String
+00:39 TRACE: [kryo] Read: 7 * 7 = 49
+00:39 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:39 TRACE: [kryo] Read initial object reference 2: String
+00:39 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 DEBUG: [kryo] Read: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Write class 21: worker.WorkResult
+00:39 TRACE: [kryo] Write initial object reference 0: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 DEBUG: [kryo] Write: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:39 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:39 TRACE: [kryo] Write class 1: String
+00:39 TRACE: [kryo] Write initial object reference 1: 7 * 7 = 49
+00:39 TRACE: [kryo] Write: 7 * 7 = 49
+00:39 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:39 TRACE: [kryo] Write initial object reference 2: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Write: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 TRACE: [kryo] Object graph complete.
+00:39 TRACE: [kryo] Read class 21: worker.WorkResult
+00:39 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:39 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:39 TRACE: [kryo] Read class 1: String
+00:39 TRACE: [kryo] Read initial object reference 1: String
+00:39 TRACE: [kryo] Read: 7 * 7 = 49
+00:39 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:39 TRACE: [kryo] Read initial object reference 2: String
+00:39 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:39 DEBUG: [kryo] Read: WorkResult(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7 * 7 = 49)
+00:39 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:43.252] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 7 * 7 = 49
+[DEBUG] [01/15/2015 08:21:43.501] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:43.505] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:44.502] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:44.508] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:45.501] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:45.504] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:46.502] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:46.505] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:47.503] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:47.510] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:48.492] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:48.496] [ClusterSystem-akka.actor.default-dispatcher-14] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:49.501] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:49.505] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:50.501] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:50.504] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:51.500] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:51.503] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:48 TRACE: [kryo] Write class 20: worker.Work
+00:48 TRACE: [kryo] Write initial object reference 0: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+[INFO] [01/15/2015 08:21:52.243] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 8
+00:48 DEBUG: [kryo] Write: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:48 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:48 TRACE: [kryo] Write class 0: Integer
+00:48 TRACE: [kryo] Write: 8
+00:48 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:48 TRACE: [kryo] Write initial object reference 1: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Write: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Read class 20: worker.Work
+00:48 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:48 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:48 TRACE: [kryo] Read class 0: int
+00:48 TRACE: [kryo] Read: 8
+00:48 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:48 TRACE: [kryo] Read initial object reference 1: String
+00:48 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 DEBUG: [kryo] Read: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Write class 20: worker.Work
+00:48 TRACE: [kryo] Write initial object reference 0: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 DEBUG: [kryo] Write: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:48 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:48 TRACE: [kryo] Write class 0: Integer
+00:48 TRACE: [kryo] Write: 8
+00:48 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:48 TRACE: [kryo] Write initial object reference 1: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Write: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Read class 20: worker.Work
+00:48 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:48 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:48 TRACE: [kryo] Read class 0: int
+00:48 TRACE: [kryo] Read: 8
+00:48 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:48 TRACE: [kryo] Read initial object reference 1: String
+00:48 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 DEBUG: [kryo] Read: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:21:52.247] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 TRACE: [kryo] Write initial object reference 0: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 DEBUG: [kryo] Write: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:48 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:48 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:48 TRACE: [kryo] Write class 0: Integer
+00:48 TRACE: [kryo] Write: 8
+00:48 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:48 TRACE: [kryo] Write initial object reference 1: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Write: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Read class 21: worker.WorkResult
+00:48 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:48 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:48 TRACE: [kryo] Read class 1: String
+00:48 TRACE: [kryo] Read initial object reference 1: String
+00:48 TRACE: [kryo] Read: 8 * 8 = 64
+00:48 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:48 TRACE: [kryo] Read initial object reference 2: String
+00:48 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 DEBUG: [kryo] Read: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Write class 21: worker.WorkResult
+00:48 TRACE: [kryo] Write initial object reference 0: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 DEBUG: [kryo] Write: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:48 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:48 TRACE: [kryo] Write class 1: String
+00:48 TRACE: [kryo] Write initial object reference 1: 8 * 8 = 64
+00:48 TRACE: [kryo] Write: 8 * 8 = 64
+00:48 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:48 TRACE: [kryo] Write initial object reference 2: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Write: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Read class 21: worker.WorkResult
+00:48 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:48 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:48 TRACE: [kryo] Read class 1: String
+00:48 TRACE: [kryo] Read initial object reference 1: String
+00:48 TRACE: [kryo] Read: 8 * 8 = 64
+00:48 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:48 TRACE: [kryo] Read initial object reference 2: String
+00:48 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 DEBUG: [kryo] Read: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Write class 21: worker.WorkResult
+00:48 TRACE: [kryo] Write initial object reference 0: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 DEBUG: [kryo] Write: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:48 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:48 TRACE: [kryo] Write class 1: String
+00:48 TRACE: [kryo] Write initial object reference 1: 8 * 8 = 64
+00:48 TRACE: [kryo] Write: 8 * 8 = 64
+00:48 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:48 TRACE: [kryo] Write initial object reference 2: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Write: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 TRACE: [kryo] Object graph complete.
+00:48 TRACE: [kryo] Read class 21: worker.WorkResult
+00:48 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:48 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:48 TRACE: [kryo] Read class 1: String
+00:48 TRACE: [kryo] Read initial object reference 1: String
+00:48 TRACE: [kryo] Read: 8 * 8 = 64
+00:48 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:48 TRACE: [kryo] Read initial object reference 2: String
+00:48 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:48 DEBUG: [kryo] Read: WorkResult(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8 * 8 = 64)
+00:48 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:52.283] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 8 * 8 = 64
+[DEBUG] [01/15/2015 08:21:52.502] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:52.506] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:53.503] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:53.507] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:54.493] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:54.497] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:55.493] [ClusterSystem-akka.actor.default-dispatcher-3] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:55.497] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:56.493] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:56.497] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:57.493] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:57.497] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:58.493] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:58.497] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:59.494] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:21:59.497] [ClusterSystem-akka.actor.default-dispatcher-2] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+00:56 TRACE: [kryo] Write class 20: worker.Work
+[INFO] [01/15/2015 08:22:00.271] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/producer] Produced work: 9
+00:56 TRACE: [kryo] Write initial object reference 0: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 DEBUG: [kryo] Write: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:56 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:56 TRACE: [kryo] Write class 0: Integer
+00:56 TRACE: [kryo] Write: 9
+00:56 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:56 TRACE: [kryo] Write initial object reference 1: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Write: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Read class 20: worker.Work
+00:56 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:56 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:56 TRACE: [kryo] Read class 0: int
+00:56 TRACE: [kryo] Read: 9
+00:56 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:56 TRACE: [kryo] Read initial object reference 1: String
+00:56 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 DEBUG: [kryo] Read: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Write class 20: worker.Work
+00:56 TRACE: [kryo] Write initial object reference 0: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 DEBUG: [kryo] Write: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:56 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:56 TRACE: [kryo] Write class 0: Integer
+00:56 TRACE: [kryo] Write: 9
+00:56 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:56 TRACE: [kryo] Write initial object reference 1: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Write: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Read class 20: worker.Work
+00:56 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:56 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:56 TRACE: [kryo] Read class 0: int
+00:56 TRACE: [kryo] Read: 9
+00:56 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:56 TRACE: [kryo] Read initial object reference 1: String
+00:56 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 DEBUG: [kryo] Read: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Write class 20: worker.Work
+[DEBUG] [01/15/2015 08:22:00.274] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/frontend/masterProxy] Forwarding message to current singleton instance Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 TRACE: [kryo] Write initial object reference 0: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 DEBUG: [kryo] Write: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:56 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:56 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:56 TRACE: [kryo] Write class 0: Integer
+00:56 TRACE: [kryo] Write: 9
+00:56 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:56 TRACE: [kryo] Write initial object reference 1: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Write: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Read class 21: worker.WorkResult
+00:56 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:56 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:56 TRACE: [kryo] Read class 1: String
+00:56 TRACE: [kryo] Read initial object reference 1: String
+00:56 TRACE: [kryo] Read: 9 * 9 = 81
+00:56 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:56 TRACE: [kryo] Read initial object reference 2: String
+00:56 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 DEBUG: [kryo] Read: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Write class 21: worker.WorkResult
+00:56 TRACE: [kryo] Write initial object reference 0: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 DEBUG: [kryo] Write: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:56 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:56 TRACE: [kryo] Write class 1: String
+00:56 TRACE: [kryo] Write initial object reference 1: 9 * 9 = 81
+00:56 TRACE: [kryo] Write: 9 * 9 = 81
+00:56 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:56 TRACE: [kryo] Write initial object reference 2: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Write: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Read class 21: worker.WorkResult
+00:56 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:56 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:56 TRACE: [kryo] Read class 1: String
+00:56 TRACE: [kryo] Read initial object reference 1: String
+00:56 TRACE: [kryo] Read: 9 * 9 = 81
+00:56 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:56 TRACE: [kryo] Read initial object reference 2: String
+00:56 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 DEBUG: [kryo] Read: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Write class 21: worker.WorkResult
+00:56 TRACE: [kryo] Write initial object reference 0: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 DEBUG: [kryo] Write: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 TRACE: [kryo] FieldSerializer.write fields of class: worker.WorkResult
+00:56 TRACE: [kryo] Write field: result (worker.WorkResult) pos=2
+00:56 TRACE: [kryo] Write class 1: String
+00:56 TRACE: [kryo] Write initial object reference 1: 9 * 9 = 81
+00:56 TRACE: [kryo] Write: 9 * 9 = 81
+00:56 TRACE: [kryo] Write field: workId (worker.WorkResult) pos=14
+00:56 TRACE: [kryo] Write initial object reference 2: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Write: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 TRACE: [kryo] Object graph complete.
+00:56 TRACE: [kryo] Read class 21: worker.WorkResult
+00:56 TRACE: [kryo] Read initial object reference 0: worker.WorkResult
+00:56 TRACE: [kryo] Read field: result (worker.WorkResult) pos=2
+00:56 TRACE: [kryo] Read class 1: String
+00:56 TRACE: [kryo] Read initial object reference 1: String
+00:56 TRACE: [kryo] Read: 9 * 9 = 81
+00:56 TRACE: [kryo] Read field: workId (worker.WorkResult) pos=14
+00:56 TRACE: [kryo] Read initial object reference 2: String
+00:56 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:56 DEBUG: [kryo] Read: WorkResult(16c03f41-6579-402f-9719-f6a4a5b15783,9 * 9 = 81)
+00:56 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:22:00.301] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/user/consumer] Consumed result: 9 * 9 = 81
+[DEBUG] [01/15/2015 08:22:00.491] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:00.495] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:01.502] [ClusterSystem-akka.actor.default-dispatcher-22] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:01.506] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:02.501] [ClusterSystem-akka.actor.default-dispatcher-21] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:02.505] [ClusterSystem-akka.actor.default-dispatcher-16] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:03.501] [ClusterSystem-akka.actor.default-dispatcher-15] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:03.505] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:03.970] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.contrib.pattern.DistributedPubSubMediator$Internal$Prune$]
+[DEBUG] [01/15/2015 08:22:04.503] [ClusterSystem-akka.actor.default-dispatcher-4] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:04.507] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:05.493] [ClusterSystem-akka.actor.default-dispatcher-23] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:05.497] [ClusterSystem-akka.actor.default-dispatcher-18] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:06.481] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter/endpointReader-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-0] stopped
+[DEBUG] [01/15/2015 08:22:06.482] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] received AutoReceiveMessage Envelope(Terminated(Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter/endpointReader-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-0#-21311259]),Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter/endpointReader-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-0#-21311259])
+[DEBUG] [01/15/2015 08:22:06.482] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A50377-3] stopped
+[DEBUG] [01/15/2015 08:22:06.482] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] Disassociated [akka.tcp://ClusterSystem@127.0.0.1:3001] <- [akka.tcp://WorkerSystem@127.0.0.1:50374]
+[WARN] [01/15/2015 08:22:06.483] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2] Association with remote system [akka.tcp://WorkerSystem@127.0.0.1:50374] has failed, address is now gated for [5000] ms. Reason is: [Disassociated].
+[DEBUG] [01/15/2015 08:22:06.487] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://ClusterSystem)] Using serializer[akka.serialization.JavaSerializer] for message [akka.remote.EndpointWriter$StoppedReading]
+[DEBUG] [01/15/2015 08:22:06.489] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] Disassociated [akka.tcp://ClusterSystem@127.0.0.1:3001] <- [akka.tcp://WorkerSystem@127.0.0.1:50374]
+[INFO] [01/15/2015 08:22:06.489] [ClusterSystem-akka.actor.default-dispatcher-19] [akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A50377-3] Message [akka.remote.transport.ActorTransportAdapter$DisassociateUnderlying] from Actor[akka://ClusterSystem/deadLetters] to Actor[akka://ClusterSystem/system/transports/akkaprotocolmanager.tcp0/akkaProtocol-tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A50377-3#-1912539879] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[DEBUG] [01/15/2015 08:22:06.489] [ClusterSystem-akka.remote.default-remote-dispatcher-5] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter] stopped
+[DEBUG] [01/15/2015 08:22:06.489] [ClusterSystem-akka.remote.default-remote-dispatcher-6] [akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2] received AutoReceiveMessage Envelope(Terminated(Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter#621108323]),Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FWorkerSystem%40127.0.0.1%3A50374-2/endpointWriter#621108323])
+[DEBUG] [01/15/2015 08:22:06.491] [ClusterSystem-akka.actor.default-dispatcher-17] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat to [akka.tcp://ClusterSystem@127.0.0.1:2551]
+[DEBUG] [01/15/2015 08:22:06.494] [ClusterSystem-akka.actor.default-dispatcher-19] [akka.tcp://ClusterSystem@127.0.0.1:3001/system/cluster/core/daemon/heartbeatSender] Cluster Node [akka.tcp://ClusterSystem@127.0.0.1:3001] - Heartbeat response from [akka.tcp://ClusterSystem@127.0.0.1:2551]

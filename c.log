@@ -1,0 +1,359 @@
+[0m[[0minfo[0m] [0mLoading project definition from /brazil/activator-akka-distributed-workers/project[0m
+[0m[[0minfo[0m] [0mSet current project to akka-distributed-workers (in build file:/brazil/activator-akka-distributed-workers/)[0m
+[0m[[0minfo[0m] [0mRunning worker.Main 0[0m
+00:00 TRACE: [kryo] Registration required: false
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field job: class java.lang.Object
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field job: class java.lang.Object
+00:00 TRACE: [kryo] Register class ID 20: worker.Work (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Register class ID 22: scala.Int (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field result: class java.lang.Object
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field result: class java.lang.Object
+00:00 TRACE: [kryo] Register class ID 21: worker.WorkResult (com.esotericsoftware.kryo.serializers.FieldSerializer)
+[INFO] [01/15/2015 08:21:18.943] [run-main-0] [Remoting] Starting remoting
+[INFO] [01/15/2015 08:21:19.230] [run-main-0] [Remoting] Remoting started; listening on addresses :[akka.tcp://WorkerSystem@127.0.0.1:50374]
+[INFO] [01/15/2015 08:21:19.233] [run-main-0] [Remoting] Remoting now listens on addresses: [akka.tcp://WorkerSystem@127.0.0.1:50374]
+[WARN] [01/15/2015 08:21:19.390] [WorkerSystem-akka.remote.default-remote-dispatcher-5] [akka.tcp://WorkerSystem@127.0.0.1:50374/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40127.0.0.1%3A2552-1/endpointWriter] AssociationError [akka.tcp://WorkerSystem@127.0.0.1:50374] -> [akka.tcp://ClusterSystem@127.0.0.1:2552]: Error [Invalid address: akka.tcp://ClusterSystem@127.0.0.1:2552] [
+akka.remote.InvalidAssociation: Invalid address: akka.tcp://ClusterSystem@127.0.0.1:2552
+Caused by: akka.remote.transport.Transport$InvalidAssociationException: Connection refused: /127.0.0.1:2552
+]
+[WARN] [01/15/2015 08:21:19.409] [WorkerSystem-akka.remote.default-remote-dispatcher-5] [Remoting] Tried to associate with unreachable remote address [akka.tcp://ClusterSystem@127.0.0.1:2552]. Address is now gated for 5000 ms, all messages to this address will be delivered to dead letters. Reason: Connection refused: /127.0.0.1:2552
+[INFO] [01/15/2015 08:21:19.425] [WorkerSystem-akka.actor.default-dispatcher-4] [akka://WorkerSystem/deadLetters] Message [akka.contrib.pattern.ClusterReceptionist$Internal$GetContacts$] from Actor[akka://WorkerSystem/user/clusterClient#1169015651] to Actor[akka://WorkerSystem/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [01/15/2015 08:21:19.425] [WorkerSystem-akka.actor.default-dispatcher-4] [akka://WorkerSystem/deadLetters] Message [akka.contrib.pattern.ClusterReceptionist$Internal$GetContacts$] from Actor[akka://WorkerSystem/user/clusterClient#1169015651] to Actor[akka://WorkerSystem/deadLetters] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [01/15/2015 08:21:19.522] [WorkerSystem-akka.actor.default-dispatcher-2] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/clusterClient] Connected to [akka.tcp://ClusterSystem@127.0.0.1:2551/user/receptionist]
+00:00 TRACE: [kryo] Register class ID 0: int (com.esotericsoftware.kryo.serializers.DefaultSerializers$IntSerializer)
+00:00 TRACE: [kryo] Register class ID 1: String (com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer)
+00:00 TRACE: [kryo] Register class ID 2: float (com.esotericsoftware.kryo.serializers.DefaultSerializers$FloatSerializer)
+00:00 TRACE: [kryo] Register class ID 3: boolean (com.esotericsoftware.kryo.serializers.DefaultSerializers$BooleanSerializer)
+00:00 TRACE: [kryo] Register class ID 4: byte (com.esotericsoftware.kryo.serializers.DefaultSerializers$ByteSerializer)
+00:00 TRACE: [kryo] Register class ID 5: char (com.esotericsoftware.kryo.serializers.DefaultSerializers$CharSerializer)
+00:00 TRACE: [kryo] Register class ID 6: short (com.esotericsoftware.kryo.serializers.DefaultSerializers$ShortSerializer)
+00:00 TRACE: [kryo] Register class ID 7: long (com.esotericsoftware.kryo.serializers.DefaultSerializers$LongSerializer)
+00:00 TRACE: [kryo] Register class ID 8: double (com.esotericsoftware.kryo.serializers.DefaultSerializers$DoubleSerializer)
+00:00 TRACE: [kryo] Register class ID 9: void (com.esotericsoftware.kryo.serializers.DefaultSerializers$VoidSerializer)
+00:00 TRACE: [kryo] Register class ID 10: scala.Enumeration$Val (com.romix.scala.serialization.kryo.EnumerationSerializer)
+00:00 TRACE: [kryo] Register class ID 11: scala.Enumeration$Value (com.romix.scala.serialization.kryo.EnumerationSerializer)
+00:00 TRACE: [kryo] Registration required: false
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field job: class java.lang.Object
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field job: class java.lang.Object
+00:00 TRACE: [kryo] Register class ID 20: worker.Work (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Register class ID 22: scala.Int (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Optimize ints: true
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field result: class java.lang.Object
+00:00 TRACE: [kryo] setIgnoreSyntheticFields: false
+00:00 TRACE: [kryo] Field workId: class java.lang.String
+00:00 TRACE: [kryo] Field result: class java.lang.Object
+00:00 TRACE: [kryo] Register class ID 21: worker.WorkResult (com.esotericsoftware.kryo.serializers.FieldSerializer)
+00:00 TRACE: [kryo] Read class 20: worker.Work
+00:00 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:00 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:00 TRACE: [kryo] Read class 0: int
+00:00 TRACE: [kryo] Read: 1
+00:00 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:00 TRACE: [kryo] Read initial object reference 1: String
+00:00 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:00 DEBUG: [kryo] Read: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:00 TRACE: [kryo] Object graph complete.
+00:00 TRACE: [kryo] Write class 20: worker.Work
+00:00 TRACE: [kryo] Write initial object reference 0: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:00 DEBUG: [kryo] Write: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:00 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:00 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:00 TRACE: [kryo] Write class 0: Integer
+00:00 TRACE: [kryo] Write: 1
+00:00 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:00 TRACE: [kryo] Write initial object reference 1: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:00 TRACE: [kryo] Write: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:00 TRACE: [kryo] Object graph complete.
+00:00 TRACE: [kryo] Read class 20: worker.Work
+00:00 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:00 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:00 TRACE: [kryo] Read class 0: int
+00:00 TRACE: [kryo] Read: 1
+00:00 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:00 TRACE: [kryo] Read initial object reference 1: String
+00:00 TRACE: [kryo] Read: 01e14e6c-c0ce-46d2-95f7-3a162aab6f13
+00:00 DEBUG: [kryo] Read: Work(01e14e6c-c0ce-46d2-95f7-3a162aab6f13,1)
+00:00 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:19.630] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 1
+[INFO] [01/15/2015 08:21:19.632] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 1 * 1 = 1.
+00:00 TRACE: [kryo] Read class 20: worker.Work
+00:00 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:00 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:00 TRACE: [kryo] Read class 0: int
+00:00 TRACE: [kryo] Read: 2
+00:00 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:00 TRACE: [kryo] Read initial object reference 1: String
+00:00 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:00 DEBUG: [kryo] Read: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:00 TRACE: [kryo] Object graph complete.
+00:00 TRACE: [kryo] Write class 20: worker.Work
+00:00 TRACE: [kryo] Write initial object reference 0: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:00 DEBUG: [kryo] Write: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:00 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:00 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:00 TRACE: [kryo] Write class 0: Integer
+00:00 TRACE: [kryo] Write: 2
+00:00 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:00 TRACE: [kryo] Write initial object reference 1: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:00 TRACE: [kryo] Write: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:00 TRACE: [kryo] Object graph complete.
+00:00 TRACE: [kryo] Read class 20: worker.Work
+00:00 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:00 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:00 TRACE: [kryo] Read class 0: int
+00:00 TRACE: [kryo] Read: 2
+00:00 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:00 TRACE: [kryo] Read initial object reference 1: String
+00:00 TRACE: [kryo] Read: 69c1ad44-4ac3-40d9-b942-2ee621e0357a
+00:00 DEBUG: [kryo] Read: Work(69c1ad44-4ac3-40d9-b942-2ee621e0357a,2)
+00:00 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:19.673] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 2
+[INFO] [01/15/2015 08:21:19.674] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 2 * 2 = 4.
+00:01 TRACE: [kryo] Read class 20: worker.Work
+00:01 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:01 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:01 TRACE: [kryo] Read class 0: int
+00:01 TRACE: [kryo] Read: 3
+00:01 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:01 TRACE: [kryo] Read initial object reference 1: String
+00:01 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:01 DEBUG: [kryo] Read: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:01 TRACE: [kryo] Object graph complete.
+00:01 TRACE: [kryo] Write class 20: worker.Work
+00:01 TRACE: [kryo] Write initial object reference 0: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:01 DEBUG: [kryo] Write: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:01 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:01 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:01 TRACE: [kryo] Write class 0: Integer
+00:01 TRACE: [kryo] Write: 3
+00:01 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:01 TRACE: [kryo] Write initial object reference 1: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:01 TRACE: [kryo] Write: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:01 TRACE: [kryo] Object graph complete.
+00:01 TRACE: [kryo] Read class 20: worker.Work
+00:01 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:01 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:01 TRACE: [kryo] Read class 0: int
+00:01 TRACE: [kryo] Read: 3
+00:01 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:01 TRACE: [kryo] Read initial object reference 1: String
+00:01 TRACE: [kryo] Read: 4bfcb5e8-a6da-4922-bd80-e6f1747c81d5
+00:01 DEBUG: [kryo] Read: Work(4bfcb5e8-a6da-4922-bd80-e6f1747c81d5,3)
+00:01 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:20.121] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 3
+[INFO] [01/15/2015 08:21:20.122] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 3 * 3 = 9.
+00:05 TRACE: [kryo] Read class 20: worker.Work
+00:05 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:05 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Read class 0: int
+00:05 TRACE: [kryo] Read: 4
+00:05 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Read initial object reference 1: String
+00:05 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:05 DEBUG: [kryo] Read: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:05 TRACE: [kryo] Object graph complete.
+00:05 TRACE: [kryo] Write class 20: worker.Work
+00:05 TRACE: [kryo] Write initial object reference 0: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:05 DEBUG: [kryo] Write: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:05 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:05 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Write class 0: Integer
+00:05 TRACE: [kryo] Write: 4
+00:05 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Write initial object reference 1: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:05 TRACE: [kryo] Write: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:05 TRACE: [kryo] Object graph complete.
+00:05 TRACE: [kryo] Read class 20: worker.Work
+00:05 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:05 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:05 TRACE: [kryo] Read class 0: int
+00:05 TRACE: [kryo] Read: 4
+00:05 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:05 TRACE: [kryo] Read initial object reference 1: String
+00:05 TRACE: [kryo] Read: da36fefc-4865-4a7c-a700-bd0d13409b2b
+00:05 DEBUG: [kryo] Read: Work(da36fefc-4865-4a7c-a700-bd0d13409b2b,4)
+00:05 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:24.144] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 4
+[INFO] [01/15/2015 08:21:24.145] [WorkerSystem-akka.actor.default-dispatcher-2] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 4 * 4 = 16.
+00:11 TRACE: [kryo] Read class 20: worker.Work
+00:11 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:11 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:11 TRACE: [kryo] Read class 0: int
+00:11 TRACE: [kryo] Read: 5
+00:11 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:11 TRACE: [kryo] Read initial object reference 1: String
+00:11 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:11 DEBUG: [kryo] Read: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:11 TRACE: [kryo] Object graph complete.
+00:11 TRACE: [kryo] Write class 20: worker.Work
+00:11 TRACE: [kryo] Write initial object reference 0: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:11 DEBUG: [kryo] Write: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:11 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:11 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:11 TRACE: [kryo] Write class 0: Integer
+00:11 TRACE: [kryo] Write: 5
+00:11 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:11 TRACE: [kryo] Write initial object reference 1: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:11 TRACE: [kryo] Write: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:11 TRACE: [kryo] Object graph complete.
+00:11 TRACE: [kryo] Read class 20: worker.Work
+00:11 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:11 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:11 TRACE: [kryo] Read class 0: int
+00:11 TRACE: [kryo] Read: 5
+00:11 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:11 TRACE: [kryo] Read initial object reference 1: String
+00:11 TRACE: [kryo] Read: 9b4eb81b-8f10-477e-b66a-ca475580f879
+00:11 DEBUG: [kryo] Read: Work(9b4eb81b-8f10-477e-b66a-ca475580f879,5)
+00:11 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:30.173] [WorkerSystem-akka.actor.default-dispatcher-2] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 5
+[INFO] [01/15/2015 08:21:30.174] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 5 * 5 = 25.
+00:15 TRACE: [kryo] Read class 20: worker.Work
+00:15 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:15 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:15 TRACE: [kryo] Read class 0: int
+00:15 TRACE: [kryo] Read: 6
+00:15 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:15 TRACE: [kryo] Read initial object reference 1: String
+00:15 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:15 DEBUG: [kryo] Read: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:15 TRACE: [kryo] Object graph complete.
+00:15 TRACE: [kryo] Write class 20: worker.Work
+00:15 TRACE: [kryo] Write initial object reference 0: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:15 DEBUG: [kryo] Write: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:15 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:15 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:15 TRACE: [kryo] Write class 0: Integer
+00:15 TRACE: [kryo] Write: 6
+00:15 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:15 TRACE: [kryo] Write initial object reference 1: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:15 TRACE: [kryo] Write: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:15 TRACE: [kryo] Object graph complete.
+00:15 TRACE: [kryo] Read class 20: worker.Work
+00:15 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:15 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:15 TRACE: [kryo] Read class 0: int
+00:15 TRACE: [kryo] Read: 6
+00:15 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:15 TRACE: [kryo] Read initial object reference 1: String
+00:15 TRACE: [kryo] Read: 106c0383-ae6f-4d46-8032-f5177ea4c5ad
+00:15 DEBUG: [kryo] Read: Work(106c0383-ae6f-4d46-8032-f5177ea4c5ad,6)
+00:15 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:34.203] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 6
+[INFO] [01/15/2015 08:21:34.203] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 6 * 6 = 36.
+00:24 TRACE: [kryo] Read class 20: worker.Work
+00:24 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:24 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:24 TRACE: [kryo] Read class 0: int
+00:24 TRACE: [kryo] Read: 7
+00:24 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:24 TRACE: [kryo] Read initial object reference 1: String
+00:24 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:24 DEBUG: [kryo] Read: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:24 TRACE: [kryo] Object graph complete.
+00:24 TRACE: [kryo] Write class 20: worker.Work
+00:24 TRACE: [kryo] Write initial object reference 0: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:24 DEBUG: [kryo] Write: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:24 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:24 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:24 TRACE: [kryo] Write class 0: Integer
+00:24 TRACE: [kryo] Write: 7
+00:24 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:24 TRACE: [kryo] Write initial object reference 1: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:24 TRACE: [kryo] Write: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:24 TRACE: [kryo] Object graph complete.
+00:24 TRACE: [kryo] Read class 20: worker.Work
+00:24 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:24 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:24 TRACE: [kryo] Read class 0: int
+00:24 TRACE: [kryo] Read: 7
+00:24 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:24 TRACE: [kryo] Read initial object reference 1: String
+00:24 TRACE: [kryo] Read: c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56
+00:24 DEBUG: [kryo] Read: Work(c216d8ee-c6b6-4a5b-9fa9-13b2ceb2ca56,7)
+00:24 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:43.238] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 7
+[INFO] [01/15/2015 08:21:43.239] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 7 * 7 = 49.
+00:33 TRACE: [kryo] Read class 20: worker.Work
+00:33 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:33 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:33 TRACE: [kryo] Read class 0: int
+00:33 TRACE: [kryo] Read: 8
+00:33 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:33 TRACE: [kryo] Read initial object reference 1: String
+00:33 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:33 DEBUG: [kryo] Read: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:33 TRACE: [kryo] Object graph complete.
+00:33 TRACE: [kryo] Write class 20: worker.Work
+00:33 TRACE: [kryo] Write initial object reference 0: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:33 DEBUG: [kryo] Write: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:33 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:33 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:33 TRACE: [kryo] Write class 0: Integer
+00:33 TRACE: [kryo] Write: 8
+00:33 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:33 TRACE: [kryo] Write initial object reference 1: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:33 TRACE: [kryo] Write: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:33 TRACE: [kryo] Object graph complete.
+00:33 TRACE: [kryo] Read class 20: worker.Work
+00:33 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:33 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:33 TRACE: [kryo] Read class 0: int
+00:33 TRACE: [kryo] Read: 8
+00:33 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:33 TRACE: [kryo] Read initial object reference 1: String
+00:33 TRACE: [kryo] Read: b01b0a6a-e0d7-4832-ac62-b0b337b90f3a
+00:33 DEBUG: [kryo] Read: Work(b01b0a6a-e0d7-4832-ac62-b0b337b90f3a,8)
+00:33 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:21:52.270] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 8
+[INFO] [01/15/2015 08:21:52.271] [WorkerSystem-akka.actor.default-dispatcher-3] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 8 * 8 = 64.
+00:41 TRACE: [kryo] Read class 20: worker.Work
+00:41 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:41 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:41 TRACE: [kryo] Read class 0: int
+00:41 TRACE: [kryo] Read: 9
+00:41 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:41 TRACE: [kryo] Read initial object reference 1: String
+00:41 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:41 DEBUG: [kryo] Read: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:41 TRACE: [kryo] Object graph complete.
+00:41 TRACE: [kryo] Write class 20: worker.Work
+00:41 TRACE: [kryo] Write initial object reference 0: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:41 DEBUG: [kryo] Write: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:41 TRACE: [kryo] FieldSerializer.write fields of class: worker.Work
+00:41 TRACE: [kryo] Write field: job (worker.Work) pos=2
+00:41 TRACE: [kryo] Write class 0: Integer
+00:41 TRACE: [kryo] Write: 9
+00:41 TRACE: [kryo] Write field: workId (worker.Work) pos=4
+00:41 TRACE: [kryo] Write initial object reference 1: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:41 TRACE: [kryo] Write: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:41 TRACE: [kryo] Object graph complete.
+00:41 TRACE: [kryo] Read class 20: worker.Work
+00:41 TRACE: [kryo] Read initial object reference 0: worker.Work
+00:41 TRACE: [kryo] Read field: job (worker.Work) pos=2
+00:41 TRACE: [kryo] Read class 0: int
+00:41 TRACE: [kryo] Read: 9
+00:41 TRACE: [kryo] Read field: workId (worker.Work) pos=4
+00:41 TRACE: [kryo] Read initial object reference 1: String
+00:41 TRACE: [kryo] Read: 16c03f41-6579-402f-9719-f6a4a5b15783
+00:41 DEBUG: [kryo] Read: Work(16c03f41-6579-402f-9719-f6a4a5b15783,9)
+00:41 TRACE: [kryo] Object graph complete.
+[INFO] [01/15/2015 08:22:00.291] [WorkerSystem-akka.actor.default-dispatcher-2] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Got work: 9
+[INFO] [01/15/2015 08:22:00.292] [WorkerSystem-akka.actor.default-dispatcher-4] [akka.tcp://WorkerSystem@127.0.0.1:50374/user/worker] Work is complete. Result 9 * 9 = 81.
